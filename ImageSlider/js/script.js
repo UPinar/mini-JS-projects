@@ -31,30 +31,22 @@ for (let i = 0; i < buttons.length; i++){
         if (i === 0){
             if(imageIndex !== 0){
                 imageIndex--;
-
-                returnImage = addImage(imageIndex);
-                addAnimationImage(returnImage);
             }
             else{
                 imageIndex = myImages.length - 1;
-
-                returnImage = addImage(imageIndex)
-                addAnimationImage(returnImage);
             }
+            returnImage = addImage(imageIndex);
+            addAnimationImage(returnImage);
         }
         else{
             if(imageIndex !== myImages.length - 1){
                 imageIndex++;
-
-                returnImage = addImage(imageIndex)
-                addAnimationImage(returnImage);
             }
             else{
                 imageIndex = 0;
-
-                returnImage = addImage(imageIndex)
-                addAnimationImage(returnImage);
             }
+            returnImage = addImage(imageIndex)
+            addAnimationImage(returnImage);
         }
     })
 }
