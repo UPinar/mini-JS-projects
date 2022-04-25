@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distance Converter</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__text"></div>
+      <div class="value-container">
+        <p>
+          Type in a number of kilometers and click the button to convert
+          distance to miles.
+        </p>
+        <div class="value__input">
+          <form method="post" action="#">
+            <input type="text" name="distance" placeholder="distance" />
+            <input
+              type="submit"
+              name="converDistance"
+              value="Convert Distance"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="result-container"></div>
+    </div>
+    <div class="change-container">
+      <p>
+        Press the "K" key to switch to kilometer conversion, press the "M" key
+        to switch to mile conversion
+      </p>
+    </div>
+  </body>
+</html>
