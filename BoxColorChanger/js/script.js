@@ -71,7 +71,7 @@ container.addEventListener("mousedown", (e) => {
 
 document.addEventListener("mouseup", () => {
     for (let i = 0; i < boxes.length; i++){
-        boxes[i].style.backgroundColor = "#d07428";
+        boxes[i].style.backgroundColor = "transparent";
 
     container.removeEventListener("mouseover",mouseOverEvent);
 }});
@@ -121,10 +121,12 @@ function mouseOverEvent (e){
                 if (boxes[i].offsetTop < minTopOutValue + boxes[i].offsetHeight){
                     if (boxes[i].offsetLeft  <= minLeftOutValue){
                         boxes[i].style.backgroundColor = "#c4514f";
+                        continue;
                     }
                 }
             }
           }
+          boxes[i].style.backgroundColor = "transparent";
         }
         else if (!goingRight && goingDown){
             if (boxes[i].offsetTop >= minTopEnterValue){
@@ -132,11 +134,13 @@ function mouseOverEvent (e){
                     if (boxes[i].offsetTop < minTopOutValue + boxes[i].offsetHeight){
                         if (boxes[i].offsetLeft + boxes[i].offsetWidth > minLeftOutValue){
                             boxes[i].style.backgroundColor = "#c4514f";
+                            continue;
                         }
                         
                     }
                 }
             }
+            boxes[i].style.backgroundColor = "transparent";
         }
         else if (goingRight && !goingDown){
             if (boxes[i].offsetTop <= minTopEnterValue){
@@ -144,11 +148,13 @@ function mouseOverEvent (e){
                     if (boxes[i].offsetTop >= minTopOutValue){
                         if (boxes[i].offsetLeft <= minLeftOutValue){
                             boxes[i].style.backgroundColor = "#c4514f";
+                            continue;
                         }
                         
                     }
                 }
             }
+            boxes[i].style.backgroundColor = "transparent";
         }
         else if (!goingRight && !goingDown){
             if (boxes[i].offsetTop <= minTopEnterValue){
@@ -156,10 +162,12 @@ function mouseOverEvent (e){
                     if (boxes[i].offsetTop >= minTopOutValue){
                         if (boxes[i].offsetLeft + boxes[i].offsetWidth > minLeftOutValue){
                             boxes[i].style.backgroundColor = "#c4514f";
+                            continue;
                         }
                     }
                 }
             }
+            boxes[i].style.backgroundColor = "transparent";
 
         }
     }
