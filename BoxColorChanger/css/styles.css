@@ -1,0 +1,33 @@
+html{
+    font-size: 62.5%;
+  }
+  
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body{
+    min-height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+    margin:0;
+    background-color: bisque;
+  }
+  
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .box {
+    border: 1px solid;
+    height: 10rem;
+    width: 10rem;
+    background-color: #d07428;
+  }
+  
