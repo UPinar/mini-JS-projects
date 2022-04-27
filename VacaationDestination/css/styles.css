@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: bisque;
+}
+
+.container{
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+
+.text-container{
+    background-color: #7d94d9;
+    color:whitesmoke;
+    padding: 2.5rem 0 3rem;
+}
+
+.text-container h1{
+   margin-bottom: 1rem;
+}
+
+.text-container > * {
+    text-align: center;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.content-container > *{
+    flex-basis: 50%;
+    padding: 0 4rem;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input,
+.form-container textarea{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+}
+
+.form-container label {
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.card-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.card-container h2{
+    text-align: center;
+    padding:0.5rem;
+    font-weight: 800;
+    grid-row: 1;
+    grid-column: 1 / -1;
+    
+}
+
+
+.card-container .card:empty{
+    background-color: transparent;
+}
+
+.card-container .card{
+    padding: 1.5rem;
+    background-color:azure;
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+.card-container 
+
+
+.card > *{
+    margin-bottom: 0.5rem;
+}
+
+

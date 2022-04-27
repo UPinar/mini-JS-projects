@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/script.js" defer></script>
+    <title>Vacation Destination Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-container">
+        <h1>Vacation Destinations Wish List</h1>
+        <p>
+          Found exciting places to visit on your nex vacation? Use the form
+          below to add them to your wishlist.
+        </p>
+      </header>
+      <main class="content-container">
+        <form class="form-container" id="destination_form">
+          <label for="destination">Destination Name</label>
+          <input
+            type="text"
+            id="destination"
+            placeholder="Enter the name of the destination"
+            required
+          />
+
+          <label for="location">Location</label>
+          <input type="text" id="location" placeholder="Where is it located?" />
+
+          <label for="photo">Photo</label>
+          <input
+            type="url"
+            id="photo"
+            placeholder="Enter an image url of the place"
+          />
+
+          <label for="description">Description</label>
+          <textarea
+            id="description"
+            cols="30"
+            rows="2"
+            placeholder="Where is it located?"
+          ></textarea>
+          <input type="submit" value="Add to list" />
+        </form>
+        <article class="card-container">
+          <h2></h2>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
